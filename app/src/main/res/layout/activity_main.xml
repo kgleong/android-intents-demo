@@ -12,7 +12,8 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YOUR NAME HERE"
+        android:text="John Doe"
+        android:textSize="30sp"
         />
 
     <Button
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvName"
         android:text="Edit Name"
+        android:textSize="30sp"
         />
 
     <Button
@@ -29,5 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btnSetName"
         android:text="Go to random webpage"
+        android:textSize="30sp"
         />
 </RelativeLayout>

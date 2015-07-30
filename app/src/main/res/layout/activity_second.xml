@@ -11,7 +11,9 @@
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        />
 
     <Button
         android:id="@+id/btnSubmit"
@@ -19,13 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/etName"
+        android:textSize="30sp"
         />
 
-    <TextView
-        android:id="@+id/tvPetNames"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnSubmit"
-        android:text="Pet Names Here"
-        />
 </RelativeLayout>

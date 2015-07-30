@@ -11,8 +11,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     public static final String NAME = "name";
     private static final int SET_NAME_REQUEST = 1;
-    public static final String CAT = "cat";
-    public static final String DOG = "dog";
 
     private Button btnSetName;
     private TextView tvName;
@@ -31,18 +29,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra(NAME, tvName.getText());
-                // startActivity(intent);
-                Dog dog = new Dog("Fido");
-                Cat cat = new Cat("Mimi");
-
-                intent.putExtra(DOG, dog);
-                intent.putExtra(CAT, cat);
-
                 startActivityForResult(intent, SET_NAME_REQUEST);
             }
         });
 
         btnBrowse = (Button) findViewById(R.id.btnBrowse);
+        btnBrowse.setVisibility(View.GONE);
+
         btnBrowse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
