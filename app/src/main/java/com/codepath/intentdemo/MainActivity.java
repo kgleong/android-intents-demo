@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnBrowse = (Button) findViewById(R.id.btnBrowse);
-        btnBrowse.setVisibility(View.GONE);
-
         btnBrowse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
